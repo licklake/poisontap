@@ -177,7 +177,7 @@ sudo sed --in-place "/exit 0/d" /etc/rc.local
 echo "/bin/sh /home/pi/poisontap/pi_startup.sh" >> /etc/rc.local
 mkdir /home/pi/poisontap
 chown -R pi /home/pi/poisontap
-apt-get update && apt-get upgrade
+apt-get update && apt-get upgrade -y
 apt-get -y install isc-dhcp-server dsniff screen nodejs
 ```
 
